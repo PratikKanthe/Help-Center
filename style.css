@@ -62,7 +62,7 @@ a{
 }
 
 .help-title{
-    position: relative;
+    position: absolute;
     color: #0842a0;
     font-size: 1.75rem;
     font-weight: 400;
@@ -70,6 +70,7 @@ a{
     padding: 0 0 1.5rem 0;
     text-align: center;
     top: 40%;
+    left: 40%;
 }
 
 .search-bar{
@@ -84,7 +85,6 @@ a{
     height: 3rem;
     padding: 0 4rem 0 4.5rem;
     width: 40%;
-    -webkit-appearance: none;
     position: absolute;
     left: 30%;
     top: 50%;
@@ -124,4 +124,58 @@ a{
     font-weight: 500;
     padding: 0.3125rem 1rem 0.3125rem 0.5rem;
     text-decoration: none;
+}
+
+
+/* landing page media query */
+@media only screen and (max-width: 992px) {
+    header{
+        background: #FFFFFF;
+    }
+    .help-title{
+        left: 35%;
+    }
+    .search-bar{
+        width: 60%;
+        left: 25%;
+    }
+    .search-btn{
+        left: 28%;
+        width: 3rem; 
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        background: #FFFFFF;
+    }
+    .help-title{
+        left: 25%;
+    }
+    .search-bar{
+        width: 80%;
+        left: 15%;
+    }
+    .search-btn{
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header{
+        background: #FFFFFF;
+    }
+    .help-title{
+        left: 20%;
+    }
+    .search-bar{
+        width: 80%;
+        left: 15%;
+        top: 55%;
+    }
+    .search-btn{
+        left: 20%;
+        top: 55%;
+    }
 }
